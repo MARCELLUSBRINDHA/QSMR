@@ -1,5 +1,9 @@
 <!-- QSMR Report Generator -->
-<link rel='stylesheet' type='text/css' href='css/Report.css'>
+
+<!-- QSMRReport.html
+Created By - Dharmendra Kumar Kaushal
+Date - 23-May-2016
+ -->
 <style>
 
 	 h2{
@@ -13,13 +17,13 @@
 	<center>
 		<h2>QMSR Report</h2>
 	</center>
-	<table class='generatereporttable' >
+	<table class='generatereporttable'>
 		<tr>
 			<td>
 				<label>Project Name : </label>
 			</td>
 			<td>
-				<select id="projectname" name="projectname" ng-model="pNameList" ng-options="pNameList for pNameList in projectNameList">
+				<select id="projectname" name="projectname" ng-model="projectname" ng-options="projectname for projectname in ProjectNames">
 					<option value="">Select Project Name</option>
 				</select>
 			</td>
@@ -29,11 +33,11 @@
 				<label>Date : </label>
 			</td>
 			<td>
-				<select id="date" name="date" ng-model="dList" ng-options="dList for dList in dateList">
+				<select id="date" name="date" ng-model="date" ng-options="date for date in Dates">
 					<option value="">Select Date From List</option>
 				</select>
 			</td>
 		</tr>
 	</table>
-	<input type='submit' value='Display' id='display'>
+	<input type='submit' value='Display' id='showReportsBtn' ng-click="showReports()" />
 </div>

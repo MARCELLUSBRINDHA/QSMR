@@ -1,6 +1,8 @@
 package com.quinnox.qsmr.service;
 
+import java.net.UnknownHostException;
 import java.util.Iterator;
+import java.util.Map;
 import java.util.Set;
 
 import javax.ws.rs.GET;
@@ -21,11 +23,11 @@ public class QSMRService {
 	JSONArray jsonArray = null;
 	JSONObject jsonObject = null;
 	
+	Logger logger = Logger.getLogger(QSMRService.class);
+	
 	@GET
 	@Path("/projectnamelist")
 	public Set getProjectNameList(){
-		
-		Logger logger = Logger.getLogger(QSMRService.class);
 		
 		logger.info("Entered in QSMRService->getProjectNameList()");
 		
@@ -35,16 +37,34 @@ public class QSMRService {
 	}
 	
 	@GET
-	@Path("/projectname/{param}/datelist")
-	public Set getDateList(@PathParam("param") String ProjectName){
-		
-		Logger logger = Logger.getLogger(QSMRService.class);
-		
+	@Path("/datelist/projectname/{projectname}")
+	public Set getDateList(@PathParam("projectname") String ProjectName){
+				
 		logger.info("Entered in QSMRService->getDateList()");
 		logger.info("Project Name :- "+ProjectName);
 		
 		Set dateList = QsmrDao.listDate("nodetest1", "user",ProjectName);		
 		return dateList;
+	}
+	
+	@GET
+	@Path("/generatereport/projectname/{projectname}/date/{date}")
+	public Set generateReportBasedOnProjectNameAndDate(@PathParam("projectname") String ProjectName, @PathParam("date") String date){
+				
+		logger.info("Entered in QSMRService->generateReportBasedOnProjectNameAndDate()");
+		logger.info("Project Name :- "+ProjectName+", Date :- "+date);
+		
+		try {
+			
+			Map<String,String> currentMapValue =  QsmrDao.findData("nodetest1", "user", ProjectName, date);
+			Map<String,String> previousMapValue =  QsmrDao.getPreviousMonthValue("nodetest1", "user");
+			
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return null;
 	}
 	
 	@GET
