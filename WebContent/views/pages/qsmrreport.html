@@ -1,17 +1,39 @@
-<div ng-init="getProjectNameList()">
+<!-- QSMR Report Generator -->
+<link rel='stylesheet' type='text/css' href='css/Report.css'>
+<style>
+
+	 h2{
+    color: #0f5dac;
+    font-size: 32px;
+    width: 100%;
+	}
+
+</style>
+<div ng-init="getProjectNameList()" class="generate-report-class">
 	<center>
-		<h1>QMSR Report</h1>
-		<p>{{ message }}</p>
+		<h2>QMSR Report</h2>
 	</center>
-	<label>Project Name</label>
-	<select id="projectname" name="projectname" ng-model="pNameList" ng-options="pNameList for pNameList in projectNameList">
-		<option value="">Select Project Name</option>
-	</select>
-	<br />
-	<br />
-	<br />
-	<label>Date : </label>
-	<select id="date" name="date" ng-model="dList" ng-options="dList for dList in dateList">
-		<option value="">Select Date From List</option>
-	</select>
+	<table class='generatereporttable' >
+		<tr>
+			<td>
+				<label>Project Name : </label>
+			</td>
+			<td>
+				<select id="projectname" name="projectname" ng-model="pNameList" ng-options="pNameList for pNameList in projectNameList">
+					<option value="">Select Project Name</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Date : </label>
+			</td>
+			<td>
+				<select id="date" name="date" ng-model="dList" ng-options="dList for dList in dateList">
+					<option value="">Select Date From List</option>
+				</select>
+			</td>
+		</tr>
+	</table>
+	<input type='submit' value='Display' id='display'>
 </div>

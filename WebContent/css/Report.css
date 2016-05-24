@@ -255,3 +255,32 @@ color: #ffffff;
     height: 100%;
     float: left;
 }
+.generatereporttable{
+	margin-left: 532px;
+    color: #0f5dac;
+	}
+.generatereporttable td{
+	padding: 27px 46px;
+	}
+.generatereporttable td select{
+	padding: 5px 0px;
+	width: 134%;
+	}
+#display {
+	padding:11px;
+	margin: 28px 739px;
+	background-color: lightsteelblue;
+	border: 2px solid black;
+	border-radius: 6px;
+	color: #0f5dac;
+	font-weight:bold;
+	}
+	.generate-report-class{
+	margin: 0;
+    font-family: verdana, sans-serif;
+    font-size: 15px;
+    padding: 0px;
+    font-weight:bold;
+	}
+
+
