@@ -1,0 +1,17 @@
+<div ng-init="getProjectNameList()">
+	<center>
+		<h1>QMSR Report</h1>
+		<p>{{ message }}</p>
+	</center>
+	<label>Project Name</label>
+	<select id="projectname" name="projectname" ng-model="pNameList" ng-options="pNameList for pNameList in projectNameList">
+		<option value="">Select Project Name</option>
+	</select>
+	<br />
+	<br />
+	<br />
+	<label>Date : </label>
+	<select id="date" name="date" ng-model="dList" ng-options="dList for dList in dateList">
+		<option value="">Select Date From List</option>
+	</select>
+</div>

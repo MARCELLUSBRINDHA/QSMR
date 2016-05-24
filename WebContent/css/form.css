@@ -1,0 +1,62 @@
+
+.header{
+    width: 100%;
+    padding: 1px;
+    border-radius: 5px;
+}
+.form{
+    width: 830px;
+	height: 1412px;
+	margin-left: 361px;
+    margin-top: 18px;
+
+}
+.inputforms{
+	    margin-top: -59px;
+}
+.header h2{
+      padding: 20px 633px;
+    margin: 0px;
+    color: #0f5dac;
+    font-size: 32px;
+    width: 100%;
+}
+.qsmrform{
+    box-shadow: inset 0 0 10px;
+    width: 100%;
+	margin-top: -14px;
+}
+.formtable td input{
+    width: 100%;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+
+.formtable td textarea{
+   border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.formtable{
+    margin-left: 90px;
+    color:  #0f5dac;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.add{
+    margin: 20px 697px;
+    background-color: lightsteelblue;
+    border-radius: 8px;
+    color:  #0f5dac;
+    width: 10%;
+	padding: 11px;
+    font-weight: 900;
+    border: 2px solid black;
+}
+.formtable td{
+ padding:26px;
+
+}

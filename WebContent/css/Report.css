@@ -1,0 +1,257 @@
+body{
+	margin:0;
+	font-family: verdana, sans-serif;
+	font-size:15px;
+	padding:0px;
+}
+.container{
+  width: 100%;
+  margin:0 auto;
+  padding:0;
+  height:1440px;
+}
+*{
+box-sizing:border-box;
+}
+.mainheader{
+    background-color:white;
+    width: 100%;
+     overflow: hidden;
+    border-bottom: 1px solid #0f5dac;
+}
+
+.mainheader h1{
+    float: left;
+    color: #0f5dac;
+    font-size: 55px;
+	padding-left:30px;
+}
+.qunx_logo
+{
+	float:right;
+	padding-top:30px;
+	padding-right:10px;
+}
+.submenu { clear:both;}
+
+.submenu ul{
+	width:100%;
+	overflow:hidden;
+	background-color:#ffffff;
+	margin-top: 0px;
+	border-bottom: 1px solid #0f5dac;
+	
+}
+
+.submenu ul li{
+	list-style: none;
+    width: 15%;
+    text-align: center;
+    float: left;
+    font-size: 47px;
+    cursor: pointer;
+ }
+ .submenu ul li a{
+	text-decoration: none;
+    color: #0f5dac;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 88px;
+   
+}
+ .submenu ul li:hover{
+  background-color:#0f5dac;
+  color:#ffffff;
+ }
+  .submenu ul li a:hover{
+ color:#ffffff;
+ background-color:#0f5dac;
+
+ }
+
+.content1,.content2,.content3{
+	margin-top: -17px;
+	width:100%;
+	height:29%;
+}
+
+.goal h2, .parameters h2, .delivery h2, .innovation h2, .keyissues h2, .highlights h2, .lowlights h2, .decisionsandactionneeded h2, .dependenciesandrisks h2{
+    padding: 15px;
+    background-color:#0f5dac;
+	margin: 0px;
+	color: white;
+	width:100%;
+/*  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 
+
+5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15); */
+	font-size:18px;
+}
+
+.goal{
+	width:50%;height:100%;
+	float:left;
+	overflow:auto;
+	/*background-image: url("http://localhost:8080/QSMRSample/image/841738-light.jpg");*/
+	border-right:1px solid #c0c0c0;
+	border-top:1px solid #c0c0c0;
+ }
+.goal ul li , .parameters ul li, .delivery ul li, .innovation ul li, .keyissues ul li, .highlights ul li, .lowlights ul li, .decisionsandactionneeded ul li, .dependenciesandrisks ul li{ padding:5px 
+
+0px;}
+.parameters{
+    float: right;
+    width: 50%;
+    height: 100%;
+	/* background-image: url("http://localhost:8080/QSMRSample/image/841738-light.jpg"); */
+	border-top:1px solid #c0c0c0;
+}
+
+.deliverytable{
+	float: left;
+	border: 1px solid ;
+	width: 100%;
+	height: 63%;
+	border-collapse: collapse;
+}
+
+.highlights{
+	width: 100%;
+	height: 50%;
+	float:left;
+	overflow:auto;
+	/* background-image: url("http://localhost:8080/QSMRSample/image/841738-light.jpg"); */
+	border-right:1px solid #c0c0c0;
+}
+
+.lowlights{
+	width: 100%;
+	height: 50%;
+	float:left;
+	overflow:auto;
+	/* background-image: url("http://localhost:8080/QSMRSample/image/841738-light.jpg"); */
+	border-right:1px solid #c0c0c0;
+}
+
+.delivery{
+	width:30%;
+	height:100%;
+	float:left;
+	overflow:auto;
+	/* background-image: url("http://localhost:8080/QSMRSample/image/841738-light.jpg"); */
+}
+
+.parametertable{
+	border-collapse: collapse;
+	width: 100%;
+	height: 83%;
+}
+
+
+
+.dependenciesandrisks{
+	width: 100%;
+	height: 50%;
+	float:right;
+	overflow:auto;
+	/* background-image: url("http://localhost:8080/QSMRSample/image/841738-light.jpg"); */
+}
+
+.decisionsandactionneeded{
+	width: 100%;
+	height: 50%;
+	float:right;
+	overflow:auto;
+	/* background-image: url("http://localhost:8080/QSMRSample/image/841738-light.jpg"); */
+}
+.parametertable th {
+	background-color: #808080;
+	color: #ffffff;
+	padding: 12px;
+	border-right: 1px solid #ffffff;
+	}
+.parametertable th:last-child { border-right:none; }
+.parametertable td{
+	border:1px solid steelblue;
+	padding:6px 5px;
+}
+
+.deliverytable th {
+	background-color: #808080;
+	color: #ffffff;
+	padding:14px 12px;
+	border-right: 1px solid #c0c0c0;
+	}
+.deliverytable th:last-child { border-right:none; }
+.deliverytable td{
+	border:1px solid #c0c0c0;
+	padding:27px 5px;
+}
+#status1,#status2,#status3,#status4,#status5,#status6,#status7,#status8{
+	background-color: green;
+	}
+
+.keyissues{
+	width:50%;
+	height:100%;
+	float:left;
+	overflow:auto;
+	/* background-image: url("http://localhost:8080/QSMRSample/image/841738-light.jpg"); */
+	border-right:1px solid #c0c0c0;
+}
+.logintable{
+font-weight: bolder;
+
+}
+.LoginForm{
+    
+    background-color: #ffffff;
+    box-shadow: inset 0px 0px 14px;
+    width: 42%;
+    margin: 52px 401px;
+    
+
+}
+.loginbutton{
+background-color:lightsteelblue;
+    margin: 20px 231px;
+    border-radius: 8px;
+    color: #0f5dac;
+    width: 15%;
+    padding: 11px;
+    font-weight: 900;
+    border: 2px solid black;
+    cursor:pointer;
+
+}
+.logintable td{
+    padding: 29px;
+    color: #0f5dac;
+
+}
+.logintable td input{
+padding:2px;
+    font-size: large;
+}
+.LoginForm h2{
+
+background-color:#0f5dac;
+color: #ffffff;
+    padding: 16px;
+    width: 100%;
+
+
+}
+
+.innovation{
+	width:50%;
+	height:100%;
+	float:right;
+	overflow:auto;
+	/* background-image: url("http://localhost:8080/QSMRSample/image/841738-light.jpg"); */
+}
+
+.part1,.part2{
+    width: 35%;
+    height: 100%;
+    float: left;
+}
